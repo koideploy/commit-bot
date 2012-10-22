@@ -14,6 +14,7 @@ set :branch, "master"
 
 ssh_options[:forward_agent] = true
 set :use_sudo, false
+set :deploy_via, :remote_cache
 
 set :whenever_command, 'bundle exec whenever'
 set(:whenever_identifier) { "#{application}-#{environment}" }
