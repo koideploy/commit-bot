@@ -1,0 +1,4 @@
+--- !map:Hash
+key: ""
+secret: ""
+token_cache: "config/token_cache.yml"
