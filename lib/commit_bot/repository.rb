@@ -29,7 +29,7 @@ module CommitBot
     private
 
     def commit_message(photo)
-      "Display photo \"#{photo.title[0..40]}\" from \"#{photo.owner_username}\""
+      "Display photo \"#{photo.title[0..37]}\" from \"#{photo.owner_username[0..19]}\""
     end
 
     def execute_in_working_dir(command)
