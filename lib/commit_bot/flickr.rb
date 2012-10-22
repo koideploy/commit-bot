@@ -16,7 +16,7 @@ module CommitBot
     end
 
     def flickr_client
-      Flickr.new(FLICKR_CONFIG_PATH)
+      ::Flickr.new(FLICKR_CONFIG_PATH)
     end
   end
 end
