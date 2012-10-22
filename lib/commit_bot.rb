@@ -1,7 +1,7 @@
 require 'bundler/setup'
 require 'grit'
 
-require File.join(File.expand_path(File.dirname(__FILE__)), *%w(commit_bot bot))
+Dir.glob(File.join(File.dirname(__FILE__), 'commit_bot', '*'), &method(:require))
 
 module CommitBot
   LOCAL_PATH = '/tmp/koideploy-showcase'
