@@ -3,7 +3,6 @@ module CommitBot
     attr_reader :grit
 
     def initialize
-      initialize_grit
       clone_repository
     end
 
